@@ -7,8 +7,8 @@ const ProductDetail = () => {
   let { id } = useParams();
   const [product, setProduct] = useState(null); // data 값을 저장하기 위한 변수를 만든다.
   const getProductDetail = async () => {
-    let url = `https://my-json-server.typicode.com/kwan-hee/
-    Hnm-mall/products/${id}`;
+    let url = `https://my-json-server.typicode.com/kwan-hee
+    /hnm-mall/products/${id}`;
     let response = await fetch(url);
     let data = await response.json();
     console.log(data);
